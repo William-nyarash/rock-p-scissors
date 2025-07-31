@@ -1,3 +1,15 @@
+const  buttons =  document.querySelectorAll("button");
+
+const getHumanChoice =(e)=> {
+  const userChoice = e;
+  return  userChoice;
+}
+
+buttons.forEach((button) => {
+   button.addEventListener("click", ()=> {
+	getHumanChoice(button.id);
+})
+})
 let humanScore = 0;
 let computerScore = 0;
 
@@ -17,10 +29,10 @@ function counter(player, score) {
     }
 }
 // get the user input
-function getHumanChoice() {
-    const userInput = prompt("Enter your choice (rock, paper, or scissors):");
-    return userInput;
-}
+//function getHumanChoice() {
+  //  const userInput = prompt("Enter your choice (rock, paper, or scissors):");
+    //return userInput;
+//}
 // The game logic
 
 function playRound(humanChoice, computerChoice) {
@@ -46,8 +58,8 @@ function playRound(humanChoice, computerChoice) {
 
 //  implimentation of the game to allow for five trials
 function playGame() {
-    const numberOfRounds = 5;
-    for (let i = 0; i < numberOfRounds; i++) {
+    
+    while(true) {
         console.log(`Round ${i + 1}:`);
         const humanChoice = getHumanChoice();
         const computerChoice = getComputerChoice();
