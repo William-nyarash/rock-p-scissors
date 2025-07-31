@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+ margin:0;
+ box-sizing:border-box;
+}
+
+.canvas {
+ width:90%;
+ max-width:400px;
+ margin:0 auto;
+ min-height:100vh; 
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+
+.inputs {
+ padding-top:2em;
+ padding-inline:1.2em;
+ width:67%;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+}
+button{
+    padding: 0.4em 0.6em;
+    text-align: center;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    border-radius: 12px;
+    background: rgb(221 118 85 / 66%);
+    font-size: small;
+    font-weight: 900;
+}
