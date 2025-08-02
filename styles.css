@@ -4,14 +4,22 @@
  margin:0;
  box-sizing:border-box;
 }
-
+body {
+    font-family: "Manrope", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .canvas {
  width:90%;
- max-width:400px;
+ max-width:470px;
  margin:0 auto;
- min-height:100vh; 
+ padding:1.2em;
  display:flex;
  justify-content:center;
+ flex-direction: column;
+ gap:3em;
  align-items:center;
 }
 
@@ -32,4 +40,9 @@ button{
     background: rgb(221 118 85 / 66%);
     font-size: small;
     font-weight: 900;
+}
+.mesg {
+    font-size: 1.2rem;
+    font-weight: 600;
+    
 }
